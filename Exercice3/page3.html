@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="page4.html">
+    <h3 style="text-align: center;">
+        Inscription en licence
+    </h3>
+    <br>
+    <fieldset>
+        <legend style="text-align: center;">
+            Informations personnelles
+        </legend>
+        <center>
+        <label for="nom">Votre nom</label>
+        <input type="text" name="nom" size="20" maxlength="30">
+        </center>
+        <br>
+        <center>
+        <label for="prenom">Votre prenom</label>
+        <input type="text" name="prenom" size="20" maxlength="30">
+        </center>
+        <br><br>
+        <center>
+        <label for="age">Votre age</label>
+        <input type="number" name="age" size="10" maxlength="5">
+        </center>
+        <br><br>
+            <center>
+        <label for="adresse"> Votre adresse</label>
+        <textarea name="adresse" id=adr" cols="30" rows="5"></textarea>
+        <br><br>
+        <label for="password">Mot de passe</label>
+        <input type="password" name="password" size="30" maxlength="50" required>
+        <br><br>
+        <label for="verif">Retapez votre mot de passe</label>
+        <input type="password" name="verif" id="verf" size="20" maxlength="30">
+    </center>
+    </fieldset>
+
+    <fieldset>
+        <legend style="text-align: center;">
+            Gestion des groupes et des options
+        </legend>
+                    <center>
+        <label for="group number"> Votre groupe</label>
+        <input type="radio" name="group number" checked >Groupe 1
+        <input type="radio" name="group number" >Groupe 2
+        <input type="radio" name="group number" >Groupe 3
+        <br><br>
+        <label for="Num Carte">Numero de carte d'etudiant</label>
+        <input type="text" name="Num Carte" id="num_carte_etud">
+        <br><br>
+        <label for="options">choisissez les options que vous desirez</label>
+        <select name="options" id="op" size="6">
+            <option value="j2ee">j2ee</option>
+            <option value="jAndroid">Android</option>
+            <option value=".Net">.Net</option>
+            <option value="HTML 5">HTML 5</option>
+            <option value="Flex">Flex</option>
+        </select>
+        <br>
+        <label for="mail">Votre email</label>
+        <input type="email" name="mail" size="30" maxlength="50">
+        <br>
+        <label for="site_etud"> votre site :</label>
+        <input type="url" name="site_etud" size="30 " maxlength="60">
+        <br>
+        <label for="date_de_naissance"> date de naissance</label>
+        <input type="date" name="date_de_naissance" id="dte">
+        <br><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+          <div >
+            <label><input type="text" name="script" id="script" pattern="[I][N][S][A][T][0-9]{4}" required /></label>
+          </div>
+    </center>
+    </fieldset>
+    <center>  
+    <input " type="submit" value="valider">
+    <input type="reset" value="reinitialiser">
+</center>
+</form>
+    
+</body>
+</html>
